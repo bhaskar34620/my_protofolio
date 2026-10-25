@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bhaskar Teja – BCA Student | Aspiring AI Engineer</title>
+<meta name="description" content="Portfolio of Putta Bhaskar Teja, BCA (AI & Data Science) student exploring Machine Learning, Agentic AI and automation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2322d3ee'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%230b1226' font-family='sans-serif' font-weight='700'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0b1226;--panel:rgba(255,255,255,.05);--line:rgba(255,255,255,.12);--ink:#eaf0ff;--muted:#a3b0cf;--cy:#22d3ee;--vi:#8b5cf6;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px;background:var(--bg)}
+body{margin:0;background:radial-gradient(900px 500px at 85% -5%,rgba(139,92,246,.22),transparent),radial-gradient(700px 500px at -5% 20%,rgba(34,211,238,.13),transparent),var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,"Helvetica Neue",Arial,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cy);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backdrop-filter:blur(14px);background:rgba(11,18,38,.72);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{font:800 1.15rem Sora,sans-serif;text-decoration:none}
+.logo b{color:var(--cy)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:8px 12px;font:inherit;cursor:pointer}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:500;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--panel);cursor:pointer;font-family:inherit;font-size:.97rem}
+.btn.pri{background:linear-gradient(135deg,var(--cy),var(--vi));color:#071026;border:0;font-weight:600}
+.btn:hover{filter:brightness(1.12)}
+.btn.sm{padding:8px 16px;font-size:.9rem}
+@media(max-width:860px){.menu{display:block}nav{position:absolute;left:0;right:0;top:68px;background:rgba(11,18,38,.97);border-bottom:1px solid var(--line);display:none;padding:12px 24px 20px}nav.open{display:block}nav ul{flex-direction:column;align-items:flex-start;gap:14px}}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding:84px 0}
+.hero h1{font-size:clamp(2.3rem,6vw,4rem);font-weight:800;letter-spacing:-.03em}
+.hero h2{font-size:clamp(1.2rem,3vw,1.7rem);font-weight:500;color:var(--cy);margin:14px 0 20px}
+.hero p{color:var(--muted);max-width:54ch;margin:0 0 30px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.soc a{display:inline-flex;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);align-items:center;justify-content:center;background:var(--panel)}
+.soc svg{width:20px;height:20px;fill:currentColor}
+.visual svg{width:100%;height:auto;max-width:380px;display:block;margin:0 auto}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding:48px 0}.visual{order:-1}.visual svg{max-width:240px}}
+.pulse{animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pulse{animation:none}}
+section{padding:76px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.8rem,4vw,2.5rem);letter-spacing:-.02em;margin-bottom:12px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 34px}
+.glass{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
+.about p{margin:0 0 14px;color:var(--muted)}
+.about dl{margin:0}.about dt{font-weight:500;margin-top:12px}.about dd{margin:0;color:var(--muted)}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:.88rem;padding:5px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+.chip.learning{border-style:dashed;color:var(--cy);border-color:rgba(34,211,238,.5)}
+.chip.confirm{border-style:dotted;color:var(--muted)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.88rem;color:var(--muted);margin-bottom:22px}
+.proj{display:flex;flex-direction:column;gap:12px;padding:0;overflow:hidden}
+.art{height:120px;display:flex;align-items:center;justify-content:center;font:800 2.4rem Sora,sans-serif;color:rgba(255,255,255,.92)}
+.proj .body{padding:0 24px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.status{align-self:flex-start;font-size:.8rem;padding:3px 12px;border-radius:999px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.5)}
+.proj p{margin:0;color:var(--muted);font-size:.97rem}
+.note{font-size:.88rem;border-left:3px solid var(--cy);padding-left:12px}
+.proj .row{margin-top:auto}
+.btn[aria-disabled="true"]{opacity:.45;cursor:not-allowed}
+ol.tl{list-style:none;margin:0;padding:0 0 0 28px;border-left:2px solid var(--line)}
+ol.tl li{position:relative;padding:0 0 22px 8px}
+ol.tl li::before{content:"";position:absolute;left:-37px;top:7px;width:14px;height:14px;border-radius:50%;background:linear-gradient(135deg,var(--cy),var(--vi))}
+ol.tl h3{font-size:1.1rem}
+.edu .glass{display:flex;flex-direction:column;gap:6px}
+.edu p{margin:0;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
+form{display:grid;gap:14px}
+label{font-size:.92rem;color:var(--muted);display:grid;gap:6px}
+input,textarea{font:inherit;color:var(--ink);background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:12px;padding:11px 14px}
+textarea{min-height:120px;resize:vertical}
+#fstatus{font-size:.92rem;color:var(--cy);min-height:1.4em;margin:0}
+footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--muted);font-size:.93rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between}
+footer ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+footer a{text-decoration:none}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#home">Bhaskar<b>.</b>Teja</a>
+  <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main"><ul id="navList"></ul></nav>
+</div></header>
+
+<main id="home">
+ <div class="wrap hero">
+  <div>
+    <h1>Hi, I’m <span id="firstName"></span>.</h1>
+    <h2>Exploring AI, Building Intelligent Solutions.</h2>
+    <p>I’m a BCA student specializing in Artificial Intelligence and Data Science, passionate about Python, Machine Learning, Agentic AI, and building technology that solves real-world problems.</p>
+    <div class="row">
+      <a class="btn pri" href="#projects">Explore My Projects</a>
+      <a class="btn" href="#contact">Let’s Connect</a>
+      <span class="row soc" id="heroSoc"></span>
+    </div>
+  </div>
+  <div class="visual" aria-hidden="true">
+    <svg viewBox="0 0 380 320" fill="none">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+      <g stroke="url(#g)" stroke-opacity=".5" stroke-width="1.5">
+        <path d="M50 70L170 40M50 70L170 130M50 160L170 40M50 160L170 130M50 160L170 220M50 250L170 130M50 250L170 220M50 250L170 290"/>
+        <path d="M170 40L300 90M170 40L300 190M170 130L300 90M170 130L300 190M170 220L300 90M170 220L300 190M170 290L300 190"/>
+      </g>
+      <g fill="#0b1226" stroke="url(#g)" stroke-width="3">
+        <circle cx="50" cy="70" r="13"/><circle cx="50" cy="160" r="13"/><circle cx="50" cy="250" r="13"/>
+        <circle cx="170" cy="40" r="13"/><circle cx="170" cy="130" r="13"/><circle cx="170" cy="220" r="13"/><circle cx="170" cy="290" r="13"/>
+        <circle cx="300" cy="90" r="13"/><circle cx="300" cy="190" r="13"/>
+      </g>
+      <circle class="pulse" cx="300" cy="140" r="30" fill="url(#g)" opacity=".85"/>
+      <path d="M313 90L300 140M313 190L300 140" stroke="url(#g)" stroke-width="1.5" stroke-opacity=".5"/>
+    </svg>
+  </div>
+ </div>
+
+ <section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <div class="about">
+    <div>
+      <p id="aboutText1"></p>
+      <p id="aboutText2"></p>
+      <p><strong style="color:var(--ink)">Career objective:</strong> to grow into an AI engineer who builds intelligent systems and autonomous agents that understand tasks, use tools, work with APIs, and automate real workflows.</p>
+    </div>
+    <div class="glass"><dl id="aboutFacts"></dl></div>
+  </div>
+ </div></section>
+
+ <section id="skills"><div class="wrap">
+  <h2>Technical skills</h2>
+  <p class="lead">What I use today and what I’m still learning, shown honestly.</p>
+  <div class="legend"><span><span class="chip">Solid</span> Using regularly</span><span><span class="chip learning">Learning</span> In progress</span><span><span class="chip confirm">To confirm</span> I’ll update this</span></div>
+  <div class="grid" id="skillGrid"></div>
+ </div></section>
+
+ <section id="projects"><div class="wrap">
+  <h2>Featured projects</h2>
+  <p class="lead">Project ideas and work in progress. Status labels show what’s real; nothing here is claimed as finished until I say so.</p>
+  <div class="grid" id="projGrid"></div>
+ </div></section>
+
+ <section id="journey"><div class="wrap">
+  <h2>Learning journey</h2>
+  <p class="lead">My roadmap, not a list of completed qualifications.</p>
+  <ol class="tl" id="timeline"></ol>
+ </div></section>
+
+ <section id="education" class="edu"><div class="wrap">
+  <h2>Education</h2>
+  <div class="grid" id="eduGrid"></div>
+ </div></section>
+
+ <section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="lead">I’m open to internships, projects, collaborations, and learning opportunities. Say hello.</p>
+  <div class="contact">
+    <div class="glass" id="contactInfo"></div>
+    <form class="glass" id="cform">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Subject<input name="subject" required></label>
+      <label>Message<textarea name="message" required></textarea></label>
+      <button class="btn pri" type="submit">Send message</button>
+      <p id="fstatus" role="status"></p>
+    </form>
+  </div>
+ </div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><strong style="color:var(--ink)" id="fName"></strong><br>© <span id="year"></span> · Designed with curiosity. Built for the future.</div>
+  <ul id="footNav"></ul>
+  <span class="row soc" id="footSoc"></span>
+</div></footer>
+
+<script>
+/* ================= EDIT YOUR DETAILS HERE ================= */
+var CONFIG = {
+  name: "Putta Bhaskar Teja",
+  shortName: "Bhaskar Teja",
+  /* EMAIL: put your real email between the quotes, e.g. "you@gmail.com" */
+  email: "",
+  /* GITHUB: put your username, e.g. "bhaskarteja". Leave "" until ready. */
+  githubUser: "",
+  linkedin: "https://linkedin.com/in/putta-bhaskar-teja-000b9b398",
+  /* RESUME: after hosting your PDF next to this file, set e.g. "resume.pdf" */
+  resume: "",
+  /* CONTACT FORM: paste a Formspree/Netlify form URL here once you host the site.
+     If left empty, the form opens your email app (needs email above). */
+  formEndpoint: "",
+  /* EDUCATION: update the semester as you progress. */
+  education: [
+    {title:"Bachelor of Computer Applications (BCA)", line:"Specialization: Artificial Intelligence and Data Science", place:"Vivekananda Global University (VGU)", note:"Current semester: 5th"}
+    /* ADD LATER: certificates, internships, achievements as more objects here */
+  ],
+  /* SKILLS: level = "solid", "learning" or "confirm". Edit freely. */
+  skills: [
+    {group:"Programming", items:[["Python","solid"],["JavaScript","learning"]]},
+    {group:"Artificial Intelligence", items:[["Artificial Intelligence","solid"],["Machine Learning","solid"],["Agentic AI","learning"],["Autonomous AI Agents","learning"],["AI-powered applications","learning"]]},
+    {group:"Web Development", items:[["HTML","solid"],["CSS","solid"],["JavaScript","learning"],["Frontend Development","solid"]]},
+    {group:"Tools & Technologies", items:[["Git & GitHub","confirm"],["Visual Studio Code","solid"],["Jupyter Notebook","solid"],["REST APIs & automation","learning"]]}
+  ],
+  /* PROJECTS: status = "Concept", "In Progress" or "Completed". github/demo = full URLs, "" if none.
+     To add a screenshot later, add image:"shot.png" (file hosted next to this page). */
+  projects: [
+    {title:"Sentiment Analysis & Depression Detection from Social Media Posts", short:"AI", status:"Concept", color:["#22d3ee","#6366f1"],
+     desc:"An AI/ML concept that analyzes social media text, studies sentiment patterns, and explores possible indicators of emotional distress.",
+     note:"Responsible AI: this is a research concept, not a clinical diagnostic tool.", tags:["Python","NLP","Machine Learning"], github:"", demo:""},
+    {title:"Digital Evidence Verification System", short:"DEV", status:"Concept", color:["#8b5cf6","#ec4899"],
+     desc:"A concept for checking the integrity and authenticity of digital evidence using suitable verification techniques.",
+     tags:["Python","Hashing","Security"], github:"", demo:""},
+    {title:"Water Level Indicator", short:"WL", status:"Concept", color:["#0ea5e9","#22d3ee"],
+     desc:"A concept for monitoring water levels and giving an indication when the water reaches a set level.",
+     tags:["Electronics","Sensors"], github:"", demo:""},
+    {title:"Personal Portfolio Website", short:"</>", status:"In Progress", color:["#6366f1","#8b5cf6"],
+     desc:"A responsive website presenting my profile, skills, projects, and career interests.",
+     tags:["HTML","CSS","JavaScript"], github:"", demo:""}
+  ],
+  roadmap: [
+    ["Python Programming Fundamentals","Writing clean, readable code and solving problems step by step."],
+    ["Data Analysis and Problem Solving","Working with data to find patterns and answers."],
+    ["Artificial Intelligence and Machine Learning","Understanding models, training, and evaluation."],
+    ["Frontend Development and JavaScript","Building interfaces people can use."],
+    ["APIs and Workflow Automation","Connecting services and automating repetitive tasks."],
+    ["Agentic AI and Autonomous AI Agents","Agents that understand tasks, use tools, and act."],
+    ["Building and Deploying Real-World AI Projects","Shipping projects that solve real problems."]
+  ]
+};
+/* =========================================================== */
+
+var $=function(id){return document.getElementById(id)};
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!==undefined)e.innerHTML=h;return e}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+$("firstName").textContent="Bhaskar Teja";
+$("fName").textContent=CONFIG.name;
+$("year").textContent=new Date().getFullYear();
+$("aboutText1").textContent="I’m a Bachelor of Computer Applications student specializing in Artificial Intelligence and Data Science at Vivekananda Global University. I’m building my programming and AI skills one project at a time.";
+$("aboutText2").textContent="I’m curious about how intelligent systems and automation can be applied to real-world problems, and I learn best by building, testing, and improving.";
+
+var links=[["Home","#home"],["About","#about"],["Skills","#skills"],["Projects","#projects"],["Learning Journey","#journey"],["Contact","#contact"]];
+var nl=$("navList");
+links.forEach(function(l){var li=el("li");li.innerHTML='<a href="'+l[1]+'">'+l[0]+'</a>';nl.appendChild(li)});
+var rl=el("li");rl.innerHTML='<a class="btn pri sm" href="#" data-resume>Download Resume</a>';nl.appendChild(rl);
+links.slice(1).forEach(function(l){var li=el("li");li.innerHTML='<a href="'+l[1]+'">'+l[0]+'</a>';$("footNav").appendChild(li)});
+
+var gh=CONFIG.githubUser?"https://github.com/"+CONFIG.githubUser:"";
+var icons={
+ li:'<svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4z"/></svg>',
+ gh:'<svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 00.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.95.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0023.5 12 11.5 11.5 0 0012 .5z"/></svg>'};
+function soc(target){
+  var a=el("a","",icons.li);a.href=CONFIG.linkedin;a.target="_blank";a.rel="noopener";a.setAttribute("aria-label","LinkedIn");target.appendChild(a);
+  var b=el("a","",icons.gh);b.setAttribute("aria-label","GitHub");
+  if(gh){b.href=gh;b.target="_blank";b.rel="noopener"}else{b.href="#contact";b.title="Add your GitHub username in CONFIG"}
+  target.appendChild(b);
+}
+soc($("heroSoc"));soc($("footSoc"));
+
+var sg=$("skillGrid");
+CONFIG.skills.forEach(function(g){
+  var c=el("div","glass","<h3>"+esc(g.group)+"</h3>");var w=el("div","chips");
+  g.items.forEach(function(i){var s=el("span","chip "+(i[1]==="solid"?"":i[1]),esc(i[0])+(i[1]==="learning"?" · learning":"")+(i[1]==="confirm"?" · to confirm":""));w.appendChild(s)});
+  c.appendChild(w);sg.appendChild(c);
+});
+
+var pg=$("projGrid");
+CONFIG.projects.forEach(function(p){
+  var c=el("article","glass proj");
+  var art=el("div","art",p.image?"":esc(p.short));art.style.background="linear-gradient(135deg,"+p.color[0]+","+p.color[1]+")";
+  if(p.image){art.style.background="url("+p.image+") center/cover"}
+  c.appendChild(art);
+  var b=el("div","body");
+  b.appendChild(el("span","status",esc(p.status)));
+  b.appendChild(el("h3","",esc(p.title)));
+  b.appendChild(el("p","",esc(p.desc)));
+  if(p.note)b.appendChild(el("p","note",esc(p.note)));
+  var t=el("div","chips");p.tags.forEach(function(x){t.appendChild(el("span","chip",esc(x)))});b.appendChild(t);
+  var r=el("div","row");
+  [["GitHub",p.github],["Live Demo",p.demo]].forEach(function(x){
+    var a=el("a","btn sm",x[0]);
+    if(x[1]){a.href=x[1];a.target="_blank";a.rel="noopener"}else{a.setAttribute("aria-disabled","true");a.title="Add this link in CONFIG when it’s ready";a.addEventListener("click",function(e){e.preventDefault()})}
+    r.appendChild(a);
+  });
+  b.appendChild(r);c.appendChild(b);pg.appendChild(c);
+});
+
+CONFIG.roadmap.forEach(function(r){$("timeline").appendChild(el("li","","<h3>"+esc(r[0])+"</h3><p style='margin:4px 0 0;color:var(--muted)'>"+esc(r[1])+"</p>"))});
+
+CONFIG.education.forEach(function(e){
+  $("eduGrid").appendChild(el("div","glass","<h3>"+esc(e.title)+"</h3><p>"+esc(e.line)+"</p><p>"+esc(e.place)+"</p><p style='color:var(--cy)'>"+esc(e.note)+"</p>"));
+});
+$("aboutFacts").innerHTML="<dt>Studying</dt><dd>BCA, AI & Data Science</dd><dt>University</dt><dd>Vivekananda Global University</dd><dt>Location</dt><dd>India</dd><dt>Focus</dt><dd>Python, Machine Learning, Agentic AI</dd>";
+
+var ci=$("contactInfo");
+ci.innerHTML="<h3>Let’s connect</h3><p style='color:var(--muted)'>I’m happy to talk about internships, projects, collaborations, and learning.</p>";
+var list=el("div","");list.style.cssText="display:grid;gap:10px";
+list.innerHTML="<div><strong>LinkedIn</strong><br><a href='"+CONFIG.linkedin+"' target='_blank' rel='noopener'>putta-bhaskar-teja</a></div>"+
+ "<div><strong>Email</strong><br>"+(CONFIG.email?"<a href='mailto:"+esc(CONFIG.email)+"'>"+esc(CONFIG.email)+"</a>":"<span style='color:var(--muted)'>Add your email in CONFIG.email</span>")+"</div>"+
+ "<div><strong>GitHub</strong><br>"+(gh?"<a href='"+gh+"' target='_blank' rel='noopener'>"+esc(CONFIG.githubUser)+"</a>":"<span style='color:var(--muted)'>Add your username in CONFIG.githubUser</span>")+"</div>";
+ci.appendChild(list);
+
+document.querySelectorAll("[data-resume]").forEach(function(a){
+  if(CONFIG.resume){a.href=CONFIG.resume;a.setAttribute("download","")}
+  else a.addEventListener("click",function(e){e.preventDefault();alert("Resume not added yet. Set CONFIG.resume to your PDF file name.")});
+});
+
+$("menuBtn").addEventListener("click",function(){var n=$("nav");var o=n.classList.toggle("open");this.setAttribute("aria-expanded",o)});
+$("nav").addEventListener("click",function(e){if(e.target.tagName==="A"){$("nav").classList.remove("open");$("menuBtn").setAttribute("aria-expanded","false")}});
+
+$("cform").addEventListener("submit",function(e){
+  e.preventDefault();var f=e.target,s=$("fstatus"),d=new FormData(f);
+  if(CONFIG.formEndpoint){
+    s.textContent="Sending…";
+    fetch(CONFIG.formEndpoint,{method:"POST",body:d,headers:{Accept:"application/json"}})
+      .then(function(r){if(!r.ok)throw 0;s.textContent="Message sent. Thank you!";f.reset()})
+      .catch(function(){s.textContent="Could not send. Please email me or message me on LinkedIn."});
+  }else if(CONFIG.email){
+    location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent(d.get("subject"))+"&body="+encodeURIComponent(d.get("message")+"\n\nFrom: "+d.get("name")+" ("+d.get("email")+")");
+    s.textContent="Opening your email app…";
+  }else{
+    s.textContent="This form isn’t connected yet. Please reach out on LinkedIn for now.";
+  }
+});
+</script>
+</body>
+</html>
